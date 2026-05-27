@@ -12,7 +12,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  inline-size: 1500px;
+  inline-size: 1200px;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -142,12 +142,7 @@ ol {
 }
 
 .search-form__textfield::placeholder {
-  color: rgba(
-    255,
-    255,
-    255,
-    0.7
-  ); /* 1. Цвет плейсхолдера — белый с прозрачностью 70 %. */
+  color: rgba(255,255,255,0.7); /* 1. Цвет плейсхолдера — белый с прозрачностью 70 %. */
   font-family: inherit; 
   font-weight: inherit; /* 3. Насыщенность наследуется. */
   font-size: inherit; /* 4. Размер наследуется. */
@@ -193,7 +188,6 @@ ol {
   font-size: 18px; /* 6. Размер шрифта — 18 px. */
   text-align: center; /* 7. Выравнивание текста по центру. */
   background-color: transparent; /* 8. Прозрачный фон кнопки. */
-  cursor: pointer; 
   inline-size: 100%; /* 10. Ширина кнопки — 100 % от контейнера. */
 }
 
