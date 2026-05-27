@@ -194,7 +194,7 @@ ol {
   font-size: 18px; /* 6. Размер шрифта — 18 px. */
   text-align: center; /* 7. Выравнивание текста по центру. */
   background-color: transparent; /* 8. Прозрачный фон кнопки. */
-  cursor: pointer; /* 9. Курсор-указатель. */
+  cursor: pointer; 
   inline-size: 100%; /* 10. Ширина кнопки — 100 % от контейнера. */
 }
 
