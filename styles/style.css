@@ -148,7 +148,7 @@ ol {
 }
 
 .search-form__textfield::placeholder {
-  color: rgba(255,255,255,0.7); 
+  color: rgba(255, 255, 255, 0.7); 
   font-family: inherit; 
   font-weight: inherit; /* 3. Насыщенность наследуется. */
   font-size: inherit; /* 4. Размер наследуется. */
@@ -219,7 +219,6 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   margin-left: 30px;
-  margin-bottom: ;
 }
 
 .title {
@@ -243,7 +242,6 @@ ol {
   display: flex;
   flex-direction: column; /* Вертикальный список */
   gap: 16px; /* Отступы между отдельными карточками .content__list-item */
-
 }
 
 .content__list-container {
@@ -300,7 +298,6 @@ ol {
   overflow: hidden; /* Скрывает лишнее, если картинка вылезет за края */
   background-color: rgba(0, 0, 0, 0);
   margin-bottom: 30px; /* Убираем отступы у карточки */
-  
 }
 
 .content__video-card-thumbnail {
