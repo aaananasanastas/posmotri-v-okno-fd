@@ -81,7 +81,7 @@ ol {
 .result__video-container {
   width: 711px; /* Фиксированная ширина */
   height: 386px; /* Фиксированная высота */
-  margin-bottom: 16px; /* Внешний отступ снизу */
+  margin-bottom: 15px; /* Внешний отступ снизу */
   margin-left: 65px;
   position: relative; /* Для возможного позиционирования оверлеев */
   overflow: hidden; /* Скрывает лишнее, если видео вылезет за края */
@@ -98,7 +98,7 @@ ol {
   display: flex; /* 1. Включаем flexbox для расположения элементов формы. */
   align-items: center; /* 2. Вертикально центрируем элементы внутри формы. */
   gap: 10px; /* 3. Отступы между элементами формы — 40 px. */
-  margin-bottom: 10px;
+  margin-bottom: 80px;
   margin-left: 60px;
 }
 
@@ -113,7 +113,6 @@ ol {
 .search-form__fieldset-title {
   font-weight: 400; /* 1. Нормальная насыщенность шрифта (regular). */
   font-size: 18px;
-  
   margin-left: 5px;
 }
 
@@ -216,10 +215,11 @@ ol {
 }
 
 .content__details {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   margin-left: 30px;
-  width: 399px;
-  height: 298px;
+  margin-bottom: ;
 }
 
 .title {
@@ -230,7 +230,7 @@ ol {
   line-height: 94%;
   letter-spacing: 0%;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   align-items: flex-start;
 }
 
@@ -239,9 +239,11 @@ ol {
 }
 
 .cards-list-item-template {
+  position: relative;
   display: flex;
   flex-direction: column; /* Вертикальный список */
   gap: 16px; /* Отступы между отдельными карточками .content__list-item */
+
 }
 
 .content__list-container {
@@ -250,6 +252,7 @@ ol {
   gap: 30px; /* Отступ между последней карточкой и кнопкой «Показать ещё» */
   height: 299px; /* Фиксированная высота контейнера (из прошлого задания) */
   overflow-y: auto; /* Прокрутка при переполнении */
+  margin-bottom: 80px;
 }
 
 /* Стили для элемента списка карточек */
@@ -294,11 +297,10 @@ ol {
 .content__video-card {
   display: flex;
   align-items: center;
-  gap: 16px;
   overflow: hidden; /* Скрывает лишнее, если картинка вылезет за края */
   background-color: rgba(0, 0, 0, 0);
-  margin: 0; /* Убираем отступы у карточки */
-  padding: 0 0 30px 0;
+  margin-bottom: 30px; /* Убираем отступы у карточки */
+  
 }
 
 .content__video-card-thumbnail {
@@ -312,7 +314,7 @@ ol {
 /* Контейнер описания карточки */
 .content__video-card-description-container {
   position: relative;
-  margin-top: -20px;
+  margin-bottom: 50px;
 }
 
 /* Заголовок карточки */
@@ -324,7 +326,7 @@ ol {
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
   color: #fff;
   transition: text-decoration 0.3s ease;
   text-overflow: ellipsis; /* Добавляем многоточие */
