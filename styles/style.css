@@ -152,8 +152,6 @@ ol {
   color: rgba(255, 255, 255, 0.7);
   font-weight: inherit; /* 3. Насыщенность наследуется. */
   font-size: inherit; /* 4. Размер наследуется. */
-  color: rgba(255, 255, 255, 0.7); 
-  font-family: inherit; 
 }
 
 .search-form__textfield:active {
