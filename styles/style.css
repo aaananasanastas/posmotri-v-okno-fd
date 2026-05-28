@@ -180,6 +180,7 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
+  position: relative;
   background-color: #fff;
   inline-size: 15px;
   block-size: 15px;
@@ -238,7 +239,6 @@ ol {
 }
 
 .cards-list-item-template {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -305,7 +305,6 @@ ol {
 
 /* Контейнер описания карточки */
 .content__video-card-description-container {
-  position: relative;
   margin-bottom: 50px;
 }
 
