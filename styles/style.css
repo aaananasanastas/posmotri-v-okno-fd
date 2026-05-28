@@ -2,7 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  position: relative;
 }
 
 html {
@@ -216,6 +215,7 @@ ol {
 }
 
 .content__details {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -251,6 +251,7 @@ ol {
   height: 299px;
   overflow-y: auto;
   margin-bottom: 80px;
+  position: relative;
 }
 
 /* Стили для элемента списка карточек */
