@@ -1,7 +1,6 @@
 *,
 *::before,
 *::after {
-  position: relative;
   box-sizing: border-box;
 }
 
@@ -68,138 +67,138 @@ ol {
 .content {
   position: relative;
   max-width: 1200px;
-  display: flex; /* 1. Включаем flexbox-макет для расположения дочерних элементов. */
-  margin: 0 30px; /* 2. Отступы по бокам контейнера: 0 сверху/снизу, 30 px слева/справа. */
-  inline-size: 100%; /* 3. Ширина контейнера равна 100 % от ширины родителя (аналог width). */
+  display: flex; 
+  margin: 0 30px; 
+  inline-size: 100%; 
 }
 
 .result {
-  gap: 16px; /* 1. Отступы между элементами внутри flex‑контейнера — 16 px. */
-  align-self: flex-end; /* 2. Выравниваем элемент по нижнему краю родительского контейнера (в рамках flex-модели). */
+  gap: 16px; 
+  align-self: flex-end; 
 }
 
 .result__video-container {
-  width: 711px; /* Фиксированная ширина */
-  height: 386px; /* Фиксированная высота */
-  margin-bottom: 15px; /* Внешний отступ снизу */
+  width: 711px; 
+  height: 386px; 
+  margin-bottom: 15px; 
   margin-left: 65px;
-  position: relative; /* Для возможного позиционирования оверлеев */
-  overflow: hidden; /* Скрывает лишнее, если видео вылезет за края */
+  position: relative; 
+  overflow: hidden; 
 }
 
 .result__video {
-  width: 100%; /* Занимает всю ширину родителя */
-  height: 100%; /* Занимает всю высоту родителя */
-  object-fit: cover; /* Обрезаем лишнее, сохраняем центр (без искажений) */
-  object-position: center; /* Центрируем видео внутри блока */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  object-position: center; 
 }
 
 .search-form {
-  display: flex; /* 1. Включаем flexbox для расположения элементов формы. */
-  align-items: center; /* 2. Вертикально центрируем элементы внутри формы. */
-  gap: 10px; /* 3. Отступы между элементами формы — 40 px. */
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
   margin-bottom: 80px;
   margin-left: 60px;
 }
 
 .search-form__fieldset {
-  display: flex; /* 1. Flex-контейнер для элементов fieldset. */
-  flex-direction: column; /* 2. Располагаем элементы вертикально (столбцом). */
-  gap: 5px; /* 3. Отступы между элементами — 5 px. */
-  border: none; /* 4. Убираем стандартную рамку fieldset. */
-  inline-size: 100%; /* 5. Ширина — 100 % от родителя. */
+  display: flex;
+  flex-direction: column; 
+  gap: 5px; 
+  border: none; 
+  inline-size: 100%; 
 }
 
 .search-form__fieldset-title {
-  font-weight: 400; /* 1. Нормальная насыщенность шрифта (regular). */
+  font-weight: 400;
   font-size: 18px;
   margin-left: 5px;
 }
 
 .search-form__label {
-  display: flex; /* 1. Flexbox для содержимого label. */
-  align-items: center; /* 2. Вертикальное центрирование содержимого label. */
-  gap: 5px; /* 3. Отступы между элементами внутри label — 5 px. */
-  cursor: pointer; /* 4. Курсор в виде указателя при наведении. */
+  display: flex; 
+  align-items: center; 
+  gap: 5px; 
+  cursor: pointer; 
 }
 
 .search-form__label:hover {
-  text-decoration: underline 1px #fff; /* 1. Подчёркивание белым цветом толщиной 1 px при наведении. */
-  text-underline-offset: 5px; /* 2. Отступ подчёркивания от текста — 5 px. */
+  text-decoration: underline 1px #fff; 
+  text-underline-offset: 5px; 
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff; /* 1. Белая рамка при фокусе. */
-  outline-offset: 1px; /* 2. Отступ рамки от элемента — 1 px. */
+  outline: 1px solid #fff;
+  outline-offset: 1px; 
 }
 
 .search-form__textfield {
-  border-top: 1px solid #fff; /* 1. Верхняя граница — белая линия 1 px. */
-  border-right: none; /* 2. Убираем правую границу. */
-  border-bottom: 1px solid #fff; /* 3. Нижняя граница — белая линия 1 px. */
-  border-left: none; /* 4. Убираем левую границу. */
+  border-top: 1px solid #fff; 
+  border-right: none; 
+  border-bottom: 1px solid #fff; 
+  border-left: none; 
   width: 225px;
-  padding: 2px 0; /* 5. Внутренние отступы: 2 px сверху/снизу, 0 слева/справа. */
-  color: currentColor; /* 6. Цвет текста наследуется от родителя. */
-  font-family: inherit; /* 7. Шрифт наследуется от родителя. */
-  font-weight: inherit; /* 8. Насыщенность шрифта наследуется. */
-  font-size: inherit; /* 9. Размер шрифта наследуется. */
-  background-color: transparent; /* 10. Прозрачный фон. */
+  padding: 2px 0; 
+  color: currentColor; 
+  font-family: inherit; 
+  font-weight: inherit; 
+  font-size: inherit; 
+  background-color: transparent; 
 }
 
 .search-form__textfield::placeholder {
   font-family: inherit;
   color: rgba(255, 255, 255, 0.7);
-  font-weight: inherit; /* 3. Насыщенность наследуется. */
-  font-size: inherit; /* 4. Размер наследуется. */
+  font-weight: inherit; 
+  font-size: inherit; 
 }
 
 .search-form__textfield:active {
-  outline: 1px solid #fff; /* 1. Белая рамка при активации (клике). */
+  outline: 1px solid #fff; 
 }
 
 .search-form__textfield:focus-visible,
 .button:focus-visible {
-  outline: 1px solid #fff; /* 1. Белая рамка при фокусе с клавиатурой. */
-  outline-offset: 2px; /* 2. Отступ рамки — 2 px. */
+  outline: 1px solid #fff; 
+  outline-offset: 2px;
 }
 
 .search-form__checkbox-list {
-  display: flex; /* 1. Flex-контейнер для списка чекбоксов. */
-  gap: 3px; /* 2. Отступы между чекбоксами — 15 px. */
+  display: flex; 
+  gap: 3px;
 }
 
 .search-form__pseudo-checkbox {
-  display: block; /* 1. Блочный элемент. */
-  border: 1px solid #fff; /* 2. Белая рамка 1 px. */
-  inline-size: 19px; /* 3. Ширина — 19 px. */
-  block-size: 19px; /* 4. Высота — 19 px. */
+  display: block; 
+  border: 1px solid #fff; 
+  inline-size: 19px; 
+  block-size: 19px; 
   margin-left: 10px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: ""; /* 1. Псевдоэлемент для отображения галочки. */
-  display: block; /* 2. Блочный элемент. */
-  background-color: #fff; /* 3. Белый цвет галочки. */
-  inline-size: 15px; /* 4. Ширина галочки — 15 px. */
-  block-size: 15px; /* 5. Высота галочки — 15 px. */
-  margin: 1px 0 0 1px; /* 6. Смещение галочки внутри чекбокса. */
+  content: "";
+  display: block; 
+  background-color: #fff; 
+  inline-size: 15px; 
+  block-size: 15px; 
+  margin: 1px 0 0 1px; 
 }
 
 .button {
-  border: 1px solid #fff; /* 1. Белая рамка кнопки. */
-  padding: 5px 0; /* 2. Внутренние отступы — 6 px сверху/снизу. */
-  color: #fff; /* 3. Белый цвет текста. */
-  font-family: "Fira Sans Condensed", sans-serif; /* 4. Шрифт кнопки. */
-  font-weight: 700; /* 5. Жирный шрифт. */
-  font-size: 18px; /* 6. Размер шрифта — 18 px. */
-  text-align: center; /* 7. Выравнивание текста по центру. */
-  background-color: transparent; /* 8. Прозрачный фон кнопки. */
-  inline-size: 77%; /* 10. Ширина кнопки — 100 % от контейнера. */
+  border: 1px solid #fff; 
+  padding: 5px 0; 
+  color: #fff; 
+  font-family: "Fira Sans Condensed", sans-serif; 
+  font-weight: 700; 
+  font-size: 18px; 
+  text-align: center; 
+  background-color: transparent; 
+  inline-size: 77%; 
 }
 
 .button:active {
-  background-color: #ffffffb2; /* 1. Полупрозрачный белый фон при нажатии (альфа‑канал). */
+  background-color: #ffffffb2; 
 }
 
 .button:hover {
@@ -240,71 +239,66 @@ ol {
 .cards-list-item-template {
   position: relative;
   display: flex;
-  flex-direction: column; /* Вертикальный список */
-  gap: 16px; /* Отступы между отдельными карточками .content__list-item */
+  flex-direction: column; 
+  gap: 16px; 
 }
 
 .content__list-container {
   display: flex;
   flex-direction: column;
-  gap: 30px; /* Отступ между последней карточкой и кнопкой «Показать ещё» */
-  height: 299px; /* Фиксированная высота контейнера (из прошлого задания) */
-  overflow-y: auto; /* Прокрутка при переполнении */
+  gap: 30px;
+  height: 299px;
+  overflow-y: auto; 
   margin-bottom: 80px;
 }
 
 /* Стили для элемента списка карточек */
 .content__list-item {
-  padding: 0 3px; /* Отступы слева и справа по 3px */
+  padding: 0 3px;
 }
 
-/* Стили для ссылки карточки — делаем блочным элементом */
+/* Стили для ссылки карточки */
 .content__card-link {
-  display: block; /* Превращаем ссылку в блочный элемент */
-  text-decoration: none; /* Убираем подчёркивание по умолчанию */
-  color: inherit; /* Наследуем цвет текста от родителя */
+  display: block;
+  text-decoration: none; 
+  color: inherit; 
 }
 
-/* Активная карточка (устанавливается JavaScript) */
 .content__card-link_current {
-  background-color: #545050; /* Тёмно‑серый фон для активной карточки */
+  background-color: #545050; 
 }
 
-/* Активное состояние при удержании кнопки мыши */
 .content__card-link:active {
-  background-color: transparent; /* Более тёмный оттенок при нажатии */
+  background-color: transparent;
 }
 
-/* Карточка при наведении курсора */
 .content__card-link:hover .content__video-card-title {
-  text-decoration: underline; /* Подчёркиваем заголовок карточки при наведении */
+  text-decoration: underline; 
   cursor: pointer;
 }
 
-/* Сброс стандартной обводки в состоянии :focus */
 .content__card-link:focus {
   outline: none;
 }
 
-/* Обводка в состоянии :focus-visible для доступности */
 .content__card-link:focus-visible {
-  outline: 2px solid #fff; /* Белая обводка */
-  outline-offset: 4px; /* Отступ обводки от края элемента */
+  outline: 2px solid #fff; 
+  outline-offset: 4px; 
 }
 
 .content__video-card {
   display: flex;
   align-items: center;
-  overflow: hidden; /* Скрывает лишнее, если картинка вылезет за края */
+  overflow: hidden; 
   background-color: rgba(0, 0, 0, 0);
-  margin-bottom: 30px; /* Убираем отступы у карточки */
+  margin-bottom: 30px;
 }
 
 .content__video-card-thumbnail {
-  width: 194px; /* Фиксируем точную ширину */
-  height: 103px; /* Фиксируем точную высоту */
-  object-fit: cover; /* Обрезаем лишнее, сохраняем центр */
-  object-position: end; /* Центрируем картинку внутри блока */
+  width: 194px; 
+  height: 103px;
+  object-fit: cover; 
+  object-position: end;
   margin-left: auto;
 }
 
@@ -326,8 +320,8 @@ ol {
   margin-bottom: 2px;
   color: #fff;
   transition: text-decoration 0.3s ease;
-  text-overflow: ellipsis; /* Добавляем многоточие */
-  white-space: nowrap; /* Запрещаем перенос на новую строку */
+  text-overflow: ellipsis;
+  white-space: nowrap; 
 }
 
 /* Описание карточки */
@@ -341,6 +335,6 @@ ol {
   color: rgba(255, 255, 255, 0.7);
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  overflow: hidden; /* Скрываем лишнее */
-  text-overflow: ellipsis; /* Многоточие в конце последней строки */
+  overflow: hidden; 
+  text-overflow: ellipsis;
 }
