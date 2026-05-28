@@ -66,9 +66,8 @@ ol {
 
 .content {
   position: relative;
-  max-width: 1200px;
+  max-width: 1140px;
   display: flex;
-  margin: 0 30px;
   inline-size: 100%;
 }
 
@@ -81,7 +80,7 @@ ol {
   width: 711px;
   height: 386px;
   margin-bottom: 15px;
-  margin-left: 65px;
+
   position: relative;
   overflow: hidden;
 }
@@ -97,8 +96,6 @@ ol {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 80px;
-  margin-left: 60px;
 }
 
 .search-form__fieldset {
@@ -190,7 +187,7 @@ ol {
   border: 1px solid #fff;
   padding: 5px 0;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -223,9 +220,8 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 75px;
   line-height: 94%;
   letter-spacing: 0%;
@@ -250,7 +246,7 @@ ol {
   gap: 30px;
   height: 299px;
   overflow-y: auto;
-  margin-bottom: 80px;
+
   position: relative;
 }
 
@@ -311,9 +307,8 @@ ol {
 
 /* Заголовок карточки */
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 30px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -327,9 +322,8 @@ ol {
 
 /* Описание карточки */
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
   line-height: 16.2px;
   letter-spacing: 0%;
@@ -338,4 +332,9 @@ ol {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.button.more-button {
+  min-height: 34px;
+  width: calc(100% - 4px);
 }
